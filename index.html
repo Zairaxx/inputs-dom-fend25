@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <h1>DOM inputs - Dropdowns, radio-buttons & checkboxar</h1>
+    <!-- Dropdown -->
+    <select name="cars" id="cars">
+        <option>Volvo</option>
+        <option>Saab</option>
+        <option>Ferrari</option>
+        <option>Toyota</option>
+    </select>
+    <!-- Radio-buttons -->
+     <div>
+        <!-- Antingen lägger man in input i label -->
+        <label>
+            Blå
+            <input checked type="radio"  name="color" id="color-blue" value="blue">
+        </label>
+        
+        <label>
+            Röd
+            <input type="radio" name="color" id="color-red" value="red">
+        </label>
+        <!-- Eller kopplar med for = input-id -->
+        <label for="color-black">Svart</label>
+        <input type="radio" name="color" id="color-black" value="black">
+        <label for="color-pink">Rosa</label>
+        <input type="radio" name="color" id="color-pink" value="pink">
+        <div>
+            <label>I agree to terms and conditions
+            <input type="checkbox" name="terms" id="terms">
+        </div>
+        </label>
+        <button id="buy">Buy car</button>
+    </div>
+        <h2>My cars</h2>
+        <ul id="car-list"></ul>
+</body>
+</html>
